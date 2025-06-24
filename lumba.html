@@ -6,31 +6,47 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>VLAN lumbalumba</title>
 <link rel="=stylesheet"href="styles.css">
+</head>
 <body>
     <div class="card">
-        <h2>BNG SEARCHER BY VLAN</h2>
+        <h2>LUMBA2 MENCARI VLAN</h2>
         <div class="dropdown">
             <label for="region">Select Region:</label>
             <select id="region">
                 <option value="">Select Region</option>
+                <option value="RJKT">RJKT</option>slot
+                <option value="RJBB">RJBB</option>slot
             </select>
         </div>
         <div class="dropdown">
-            <label for="vlan">Select VLAN:</label>
-            <input list="vlanOptions" id="vlan" disabled>
+            <label for="vlan">Select VLAN Lumba2:</label>
+            <input list="vlanOptions" id="vlan">
             <datalist id="vlanOptions">
-                <!-- VLAN options will be populated dynamically -->
+            <option value="2514"></option>
+            <option value="2515"></option>
+            <option value="2516"></option>
+            <option value="2517"></option>
+            <option value="2519"></option>
+            <option value="2520"></option>
+            <option value="2521"></option>
+            <option value="2523"></option>
+            <option value="2530"></option>
+            <option value="2537"></option>
+            <option value="2540"></option>
+            <option value="2541"></option>
             </datalist>
         </div>
-        <div class="output-label" id="bngLabel">BNG</div>
-        <div class="output-label" id="nasLabel">NAS</div>
+        <div class="output-label" id="bngLabel">OLT</div>
+        <div class="output-label" id="nasLabel">APA YA?</div>
         <div class="button-group">
-            <button id="copyButton">Copy BNG</button>
+            <button id="copyButton">Copy OLT</button>
             <button id="resetButton">Reset</button>
         </div>
         <label class="switch">
             <input type="checkbox" id="modeSwitch">
-            <span class="slider"></span>
+            <span class="slider">
+              ::before
+            </span>
         </label>
     </div>
     <script src="script.js"></script>
